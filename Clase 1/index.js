@@ -28,6 +28,9 @@ lineas
 // let nombre = "andres";
 // let saludoCompleto = saludo + " " + nombre;
 // console.log(saludoCompleto);
-let nombre = prompt("Ingrese su nombre");
-let mensaje = "Hola " + nombre;
-alert(mensaje);
+// let nombre = prompt("Ingrese su nombre");
+// let mensaje = "Hola " + nombre;
+// alert(mensaje);
+
+let numero = parseInt(prompt("ingrese un numero"));
+console.log(typeof(numero));
