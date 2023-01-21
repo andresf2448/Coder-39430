@@ -127,8 +127,9 @@ let nombre = prompt("Ingrese un nombre");
 //   alert("Usuario incorrecto");
 // }
 
-if (nombre.toLowerCase() === "pepito") {
-  alert("hola pepito");
-} else {
-  alert("no eres pepito");
-}
+// if (nombre.toLowerCase() === "pepito") {
+//   alert("hola pepito");
+// } else {
+//   alert("no eres pepito");
+// }
+
