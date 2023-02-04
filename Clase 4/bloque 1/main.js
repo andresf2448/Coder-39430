@@ -109,14 +109,27 @@ estructura de un arreglo
 
 // eliminar("sofia");
 
-const productos = [
-  { id: 1, nombre: "pantalon", precio: 1000 },
-  { id: 2, nombre: "camisa", precio: 500 },
-  { id: 3, nombre: "zapato", precio: 700 },
-  { id: 4, nombre: "gorra", precio: 1750 },
-];
+// const productos = [
+//   { id: 1, nombre: "pantalon", precio: 1000 },
+//   { id: 2, nombre: "camisa", precio: 500 },
+//   { id: 3, nombre: "zapato", precio: 700 },
+//   { id: 4, nombre: "gorra", precio: 1750 },
+// ];
 
-for (let index = 0; index < productos.length; index++) {
-  const element = productos[index];
-  console.log(element.precio);
-}
+// for (let index = 0; index < productos.length; index++) {
+//   productos[index].precio = 3000;
+// }
+
+//Paso por valor
+// let nombre1 = "andres";
+// let nombre2 = nombre1;
+
+// nombre2 = "camila";
+// console.log(nombre1);
+
+//paso por referencia
+// let persona1 = {nombre: "andres", edad: 50};
+// let persona2 = persona1;
+
+// persona2.nombre = "camila";
+// console.log(persona1);
