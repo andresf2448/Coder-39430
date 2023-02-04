@@ -95,3 +95,28 @@ estructura de un arreglo
 
 // const nombres = ["juan", "camila", "sofia", "luz", "yuliana"];
 // console.log(nombres.join("===="));
+
+// const nombres = ["juan", "camila", "sofia", "luz", "yuliana"];
+
+// const eliminar = (nombre) => {
+//   let index = nombres.indexOf(nombre);
+
+//   if(index !== -1){
+//     nombres.splice(index, 1);
+//     console.log(nombres);
+//   }
+// };
+
+// eliminar("sofia");
+
+const productos = [
+  { id: 1, nombre: "pantalon", precio: 1000 },
+  { id: 2, nombre: "camisa", precio: 500 },
+  { id: 3, nombre: "zapato", precio: 700 },
+  { id: 4, nombre: "gorra", precio: 1750 },
+];
+
+for (let index = 0; index < productos.length; index++) {
+  const element = productos[index];
+  console.log(element.precio);
+}
