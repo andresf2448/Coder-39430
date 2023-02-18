@@ -59,17 +59,17 @@
 // localStorage.setItem("carrito", JSON.stringify(productos));
 
 // let boton = document.getElementById("boton");
-// let usuario;
-// let usuarioStorage = sessionStorage.getItem("usuario");
+let usuario;
+let usuarioStorage = sessionStorage.getItem("usuario");
 
-// if(usuarioStorage){
-//   usuario = usuarioStorage;
-//   alert(`Bienvenid@ ${usuario}`);
-// }else{
-//   usuario = prompt("Ingrese su nombre");
-//   sessionStorage.setItem("usuario", usuario);
-//   alert(`Eres nuevo, Bienvenido ${usuario}`);
-// }
+if(usuarioStorage){
+  usuario = usuarioStorage;
+  alert(`Bienvenid@ ${usuario}`);
+}else{
+  usuario = prompt("Ingrese su nombre");
+  sessionStorage.setItem("usuario", usuario);
+  alert(`Eres nuevo, Bienvenido ${usuario}`);
+}
 
 // boton.addEventListener("click", () => {
 //   sessionStorage.removeItem("usuario");
