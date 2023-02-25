@@ -1,10 +1,11 @@
+//SWEET ALERT
 // Swal.fire(
 //   'Good job!',
 //   'You clicked the button!',
 //   'success'
 // )
 
-let boton = document.getElementById("boton");
+// let boton = document.getElementById("boton");
 // boton.addEventListener("click", () => {
 //   Swal.fire({
 //     title: "Error!",
@@ -72,17 +73,102 @@ let boton = document.getElementById("boton");
 //   });
 // });
 
-boton.addEventListener("click", () => {
-  Swal.fire({
-    title: "Ingrese un nombre",
-    input: "text",
-    showCancelButton: true,
-    confirmButtonText: "Look up",
-  }).then((result) => {
-    if (result.isConfirmed) {
-      Swal.fire({
-        title: `${result.value}`,
-      });
-    }
-  });
-});
+// boton.addEventListener("click", () => {
+//   Swal.fire({
+//     title: "Ingrese un nombre",
+//     input: "text",
+//     showCancelButton: true,
+//     confirmButtonText: "Look up",
+//   }).then((result) => {
+//     if (result.isConfirmed) {
+//       Swal.fire({
+//         title: `${result.value}`,
+//       });
+//     }
+//   });
+// });
+
+//TOASTIFY
+let boton = document.getElementById("boton");
+// boton.addEventListener("click", () => {
+//   Toastify({
+//     text: "Probando toast!",
+//     duration: 3000,
+//   }).showToast();
+// });
+
+// boton.addEventListener("click", () => {
+//   Toastify({
+//     text: "Probando toast!",
+//     duration: 3000,
+//     style: {
+//       background: "linear-gradient(to left, #00b09b, #96c92d)",
+//     },
+//   }).showToast();
+// });
+
+// boton.addEventListener("click", () => {
+//   Toastify({
+//     text: "Probando toast!",
+//     duration: 3000,
+//     className: "notificacion",
+//   }).showToast();
+// });
+
+// boton.addEventListener("click", () => {
+//   Toastify({
+//     text: "Probando toast!",
+//     duration: 3000,
+//     onClick: () => {
+//       Toastify({
+//         text: "Clickeaste un Toast!",
+//         duration: 1500,
+//       }).showToast();
+//     },
+//   }).showToast();
+// });
+
+// boton.addEventListener("click", () => {
+//   Toastify({
+//     text: "Click aquí para ir a Coder!",
+//     duration: 3000,
+//     destination: "https://www.coderhouse.com",
+//   }).showToast();
+// });
+
+//LUXON
+const DateTime = luxon.DateTime;
+// const dt = DateTime.local(2023, 1, 25);
+// console.log(dt.c);
+
+// const now = DateTime.now();
+// console.log(now.toString());
+// console.log(now.year);
+// console.log(now.month);
+// console.log(now.day);
+// console.log(now.second);
+// console.log(now.weekday);
+// console.log(now.zoneName);
+// console.log(now.daysInMonth);
+
+// console.log(now.toLocaleString());
+// console.log(now.toLocaleString(DateTime.DATE_FULL));
+// console.log(now.toLocaleString(DateTime.TIME_SIMPLE));
+// console.log(now.setLocale("es").toLocaleString(DateTime.DATE_FULL));
+
+// console.log(now.toLocaleString(DateTime.DATETIME_SHORT));
+
+// const suma = now.plus({ hours: 5, minutes: 10 });
+// console.log(suma.toLocaleString(DateTime.DATETIME_SHORT));
+
+// const resta = now.minus({ month: 1, days: 2 });
+// console.log(resta.toLocaleString(DateTime.DATETIME_SHORT));
+
+const Interval = luxon.Interval;
+const now = DateTime.now();
+const navidad = DateTime.local(2023, 12, 25);
+
+const i = Interval.fromDateTimes(now, navidad);
+console.log(i.length("days"));
+console.log(i.length("hours"));
+console.log(i.length("minutes"));
